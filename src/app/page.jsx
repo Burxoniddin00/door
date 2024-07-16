@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="mt-16 flex flex-col md:flex-row justify-center text-center items-center pb-7">
       <div className="max-w-[90%] md:max-w-[50%]">
-        <h1 className="min-[650px]:text-5xl  min-[650px]:font-extrabold font-bold text-4xl ">
+        <h1 className="min-[650px]:text-5xl min-[650px]:font-extrabold font-bold text-4xl">
           Mdoors - Bu qulay tanlov
         </h1>
         <div className="mt-10 min-[650px]:text-xl font-bold">
@@ -16,10 +16,10 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-7 justify-center text-center mt-16">
           <button className="text-black bg-white p-2 font-semibold text-xl rounded-2xl">
-            Sinab ko'rish
+            Sinab ko&apos;rish
           </button>
           <button className="text-black bg-white p-2 font-semibold text-xl rounded-2xl">
-            Sinab ko'rish
+            Sinab ko&apos;rish
           </button>
         </div>
       </div>
