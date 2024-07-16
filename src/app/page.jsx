@@ -1,8 +1,10 @@
 import Image from "next/image";
 import img from "../img/wd.png";
+import Card from "@/controllers/card";
 
 export default function Home() {
   return (
+    <>
     <div className="mt-16 flex flex-col md:flex-row justify-center text-center items-center pb-7">
       <div className="max-w-[90%] md:max-w-[50%]">
         <h1 className="min-[650px]:text-5xl min-[650px]:font-extrabold font-bold text-4xl">
@@ -27,5 +29,9 @@ export default function Home() {
         <Image src={img} alt="img" />
       </div>
     </div>
+    <div>
+      <Card/>
+    </div>
+    </>
   );
 }
