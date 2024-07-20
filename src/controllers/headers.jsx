@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 import { CSSTransition } from "react-transition-group";
@@ -9,23 +10,33 @@ const Headers = () => {
 
   return (
     <div className="flex justify-between items-center pt-5 pb-5 px-5 sm:px-10">
-      <h1 className="text-2xl font-extrabold">Logo</h1>
+      <Link href={"/"}>
+        <h1 className="text-2xl font-extrabold">Logo</h1>
+      </Link>
       <ul className="flex gap-5 max-[650px]:hidden">
         <li className="relative group">
-          <h4 className="text-xl font-semibold cursor-pointer">Home</h4>
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          <Link href={"/"}>
+            <h4 className="text-xl font-semibold cursor-pointer">Home</h4>
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         </li>
         <li className="relative group">
-          <h4 className="text-xl font-semibold cursor-pointer">About us</h4>
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          <Link href={"/about"}>
+            <h4 className="text-xl font-semibold cursor-pointer">About us</h4>
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         </li>
         <li className="relative group">
-          <h4 className="text-xl font-semibold cursor-pointer">Join us</h4>
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          <Link href={"/join"}>
+            <h4 className="text-xl font-semibold cursor-pointer">Join us</h4>
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         </li>
         <li className="relative group">
-          <h4 className="text-xl font-semibold cursor-pointer">Contact us</h4>
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          <Link href={"/contact"}>
+            <h4 className="text-xl font-semibold cursor-pointer">Contact us</h4>
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+          </Link>
         </li>
       </ul>
       <button
