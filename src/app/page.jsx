@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "../img/wd.png";
 import Card from "@/controllers/card";
+import Camera from "@/controllers/camera/camera";
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
     </div>
     <div>
       <Card/>
+    </div>
+    <div className="pb-5">
+      <Camera/>
     </div>
     </>
   );
