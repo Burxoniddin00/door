@@ -1,10 +1,11 @@
+import Camera from '@/controllers/camera/camera'
 import React from 'react'
 
 const Join = () => {
   return (
-    <div>
-      <h1>join</h1>
-    </div>
+    <div className="pb-5">
+    <Camera/>
+  </div>
   )
 }
 
