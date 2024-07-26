@@ -50,9 +50,7 @@ const Headers = () => {
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative my-6 mx-auto max-w-3xl w-[90%] sm:w-[50%]">
-              {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                {/*header*/}
                 <div className="text-end p-5">
                   <button
                     className="text-xl text-black mb-3"
@@ -105,16 +103,16 @@ const Headers = () => {
                 <div className="flex flex-col gap-5 text-black">
                   <ul>
                     <li className="text-xl font-semibold cursor-pointer">
-                      Home
+                      <Link href={"/"}>Home</Link>
                     </li>
                     <li className="text-xl font-semibold cursor-pointer">
-                      About us
+                      <Link href={"/about"}>About us</Link>
                     </li>
                     <li className="text-xl font-semibold cursor-pointer">
-                      Join us
+                      <Link href={"/join"}>Join us</Link>
                     </li>
                     <li className="text-xl font-semibold cursor-pointer">
-                      Contact us
+                      <Link href={"/contact"}>Contact us</Link>
                     </li>
                   </ul>
                 </div>
